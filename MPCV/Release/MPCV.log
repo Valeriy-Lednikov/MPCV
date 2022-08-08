@@ -1,0 +1,12 @@
+﻿  MPCV.cpp
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\DrawFont.h(151,20): warning C4018: <: несоответствие типов со знаком и без знака
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(34,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(34,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(39,45): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(39,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Создание кода
+  2 of 83 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  MPCV.vcxproj -> F:\__Project\__2022\_____New\P3\MPCV\Release\MPCV.exe
