@@ -29,9 +29,6 @@
     <ClInclude Include="Lcd.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Global.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="font.cpp">
       <Filter>Исходные файлы</Filter>
     </ClInclude>

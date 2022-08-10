@@ -153,7 +153,6 @@
     <ClInclude Include="font.cpp" />
     <ClInclude Include="font.h" />
     <ClInclude Include="Lcd.h" />
-    <ClInclude Include="Global.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -23,29 +23,20 @@ class LCD {
 	—haracter FontTable[127];
 	//************************************************
 	void InicializeFont();
+	int* GetBits(unsigned int num);
+
+
+
 public:
+
+
 	void Inicialize(sf::Vector2i pos, int pixelScale, sf::Vector2i countPixel, sf::RenderWindow* _window);
 	void Update();
-
-	//int* get_bits(int n, int bitswanted);
-	//int* GetBits(unsigned int num);
-	//—haracter GetCharacter(int id);
-	//void Draw—haracter(int x, int y, —haracter _char);
-	//void Draw—haracter(int x, int y, int _char);
-	//void PrintString(std::string line, int y);
-	//void AddString(std::string line, int y);
-	//void Clear();
-
-	
-	//void UpdateLCD(int mode) {
-	//	//mode 0 - string
-	//	//mode 1 - pixel
-	//	//mode 2 - combinate
-	//	
-	//	for (int i = 0; i < 8; i++) {
-	//		PrintString(lcdSpace.line[i], i);
-	//	}
-	//}
+	void Clear();
+	—haracter GetCharacter(int id);
+	void Draw—haracter(int x, int y, —haracter _char);
+	void Draw—haracter(int x, int y, int _char);
+	void PrintString(std::string line, int y);
 };
 
 

@@ -51,26 +51,25 @@ int main()
 				{
 					window.close();
 				}
-				/*if (event.key.code == sf::Keyboard::W)
+				if (event.key.code == sf::Keyboard::W)
 				{
-					lcd().PrintString("ABCDEFGHIJKLMNOPQR", 0);
-					lcd().PrintString("STUVWXYZ", 1);
-					lcd().PrintString("abcdefghijklmnopqr", 2);
-					lcd().PrintString("stuvwxyz", 3);
-					lcd().PrintString("! ?", 4);
-					lcd().PrintString("0123456789", 5);
-					lcd().PrintString("0123456789", 6);
-					lcd().PrintString("0123456789", 7);
+					lcd.PrintString("ABCDEFGHIJKLMNOPQR", 0);
+					lcd.PrintString("STUVWXYZ", 1);
+					lcd.PrintString("abcdefghijklmnopqr", 2);
+					lcd.PrintString("stuvwxyz", 3);
+					lcd.PrintString("! ?", 4);
+					lcd.PrintString("0123456789", 5);
+					lcd.PrintString("0123456789", 6);
+					lcd.PrintString("0123456789", 7);
 				}
 				if (event.key.code == sf::Keyboard::S)
 				{
-					lcd().Clear();
-				}*/
+					lcd.Clear();
+				}
 			}
 		}
 		window.clear(Color(239, 245, 184));
 		lcd.Update();
-
 
 
 
