@@ -32,7 +32,10 @@
     <ClInclude Include="Global.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Chars.h">
+    <ClInclude Include="font.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

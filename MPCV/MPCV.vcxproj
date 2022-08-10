@@ -150,7 +150,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chars.h" />
+    <ClInclude Include="font.cpp" />
+    <ClInclude Include="font.h" />
     <ClInclude Include="Lcd.h" />
     <ClInclude Include="Global.h" />
   </ItemGroup>

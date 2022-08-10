@@ -1,4 +1,7 @@
 #pragma once
+#include "font.h"
+
+
 
 Ñharacter ch_A = {
 	0b00000000,
