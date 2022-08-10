@@ -1,4 +1,5 @@
 #pragma once
+
 Ñharacter ch_A = {
 	0b00000000,
 	0b01100000,

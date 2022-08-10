@@ -1,12 +1,71 @@
-﻿  MPCV.cpp
-F:\__Project\__2022\_____New\P3\MPCV\MPCV\DrawFont.h(151,20): warning C4018: <: несоответствие типов со знаком и без знака
-F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(34,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(34,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+﻿  Lcd.cpp
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(29,18): error C2065: ch_A: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(30,18): error C2065: ch_B: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(31,18): error C2065: ch_C: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(32,18): error C2065: ch_D: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(33,18): error C2065: ch_E: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(34,18): error C2065: ch_F: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(35,18): error C2065: ch_G: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(36,18): error C2065: ch_H: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(37,18): error C2065: ch_I: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(38,18): error C2065: ch_J: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(39,18): error C2065: ch_K: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(40,18): error C2065: ch_L: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(41,18): error C2065: ch_M: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(42,18): error C2065: ch_N: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(43,18): error C2065: ch_O: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(44,18): error C2065: ch_P: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(45,18): error C2065: ch_Q: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(46,18): error C2065: ch_R: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(47,18): error C2065: ch_S: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(48,18): error C2065: ch_T: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(49,18): error C2065: ch_U: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(50,18): error C2065: ch_V: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(51,18): error C2065: ch_W: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(52,18): error C2065: ch_X: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(53,18): error C2065: ch_Y: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(54,18): error C2065: ch_Z: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(57,18): error C2065: ch_a: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(58,18): error C2065: ch_b: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(59,18): error C2065: ch_c: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(60,19): error C2065: ch_d: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(61,19): error C2065: ch_e: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(62,19): error C2065: ch_f: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(63,19): error C2065: ch_g: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(64,19): error C2065: ch_h: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(65,19): error C2065: ch_i: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(66,19): error C2065: ch_j: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(67,19): error C2065: ch_k: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(68,19): error C2065: ch_l: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(69,19): error C2065: ch_m: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(70,19): error C2065: ch_n: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(71,19): error C2065: ch_o: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(72,19): error C2065: ch_p: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(73,19): error C2065: ch_q: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(74,19): error C2065: ch_r: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(75,19): error C2065: ch_s: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(76,19): error C2065: ch_t: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(77,19): error C2065: ch_u: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(78,19): error C2065: ch_v: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(79,19): error C2065: ch_w: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(80,19): error C2065: ch_x: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(81,19): error C2065: ch_y: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(82,19): error C2065: ch_z: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(85,18): error C2065: ch_0: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(86,18): error C2065: ch_1: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(87,18): error C2065: ch_2: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(88,18): error C2065: ch_3: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(89,18): error C2065: ch_4: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(90,18): error C2065: ch_5: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(91,18): error C2065: ch_6: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(92,18): error C2065: ch_7: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(93,18): error C2065: ch_8: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(94,18): error C2065: ch_9: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(98,18): error C2065: ch_Exclamation: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(99,18): error C2065: ch_Question: необъявленный идентификатор
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\Lcd.cpp(151,20): warning C4018: <: несоответствие типов со знаком и без знака
+  MPCV.cpp
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(34,36): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(34,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
 F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(39,45): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
 F:\__Project\__2022\_____New\P3\MPCV\MPCV\MPCV.cpp(39,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  Создание кода
-  2 of 83 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
-  MPCV.vcxproj -> F:\__Project\__2022\_____New\P3\MPCV\Release\MPCV.exe

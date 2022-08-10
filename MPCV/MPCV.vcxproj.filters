@@ -18,12 +18,15 @@
     <ClCompile Include="MPCV.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Lcd.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DrawFont.h">
+    <ClInclude Include="Lcd.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Global.h">

@@ -1,9 +1,9 @@
-
 #pragma once
-#include "Global.h"
-#include "Chars.h"
+//#include "Global.h"
+#include "Lcd.h"
+#include <iostream>
 
-int* get_bits(int n, int bitswanted) {
+int* LCD::get_bits(int n, int bitswanted) {
 	int* bits = (int*)malloc(sizeof(int) * bitswanted);
 
 	int k;
@@ -25,7 +25,7 @@ int* get_bits(int n, int bitswanted) {
 
 
 
-void InicializeFont() {
+void LCD::InicializeFont() {
 	FontTable[65] = ch_A;
 	FontTable[66] = ch_B;
 	FontTable[67] = ch_C;
@@ -99,7 +99,7 @@ void InicializeFont() {
 	FontTable[63] = ch_Question;
 }
 
-int* GetBits(unsigned int num)
+int* LCD::GetBits(unsigned int num)
 {
 	int bits[8];
 	int count = 0;
@@ -114,26 +114,26 @@ int* GetBits(unsigned int num)
 	return bits;
 }
 
-—haracter GetCharacter(int id) {
+—haracter LCD::GetCharacter(int id) {
 	return FontTable[id];
 }
 
-void Draw—haracter(int x, int y, —haracter _char) {
+void LCD::Draw—haracter(int x, int y, —haracter _char) {
 	for (int i = 0; i < 8; i++) {
-		int *line = new int[8];
+		int* line = new int[8];
 		line = GetBits(_char.—haracter[i]);
 		for (int j = 0; j < 8; j++) {
 			if (line[j] == 1) {
-				screen[((x + j)) + ((y+i) * With)].active = true;
+				screen[((x + j)) + ((y + i) * With)].active = true;
 			}
-			
-			
+
+
 			//x+y*With
 		}
 	}
 }
 
-void Draw—haracter(int x, int y, int _char) {
+void LCD::Draw—haracter(int x, int y, int _char) {
 	—haracter temp = GetCharacter(_char);
 	for (int i = 0; i < 8; i++) {
 		int* line = new int[8];
@@ -147,10 +147,21 @@ void Draw—haracter(int x, int y, int _char) {
 	}
 }
 
-void PrintString(std::string line, int y) {
+void LCD::PrintString(std::string line, int y) {
 	for (int i = 0; i < line.length(); i++) {
 		if (line[i] != '\0' || line[i] != '\n' || line[i] != ' ') {
 			Draw—haracter(i * 7, y * 8, (int)line[i]);
 		}
+	}
+}
+
+void LCD::AddString(std::string line, int y) {
+	lcdSpace.line[y] = line;
+}
+
+
+void LCD::Clear() {
+	for (int i = 0; i < With * Height; i++) {
+		screen[i].active = false;
 	}
 }

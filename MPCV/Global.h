@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 const int With = 128;
 const int Height = 64;
 
@@ -16,4 +17,8 @@ Cell screen[With * Height];
 struct Ñharacter
 {
 	int Ñharacter[8];
+};
+
+struct ScreenSpace {
+	std::string line[8];
 };

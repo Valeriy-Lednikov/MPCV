@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Lcd.cpp" />
     <ClCompile Include="MPCV.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,7 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chars.h" />
-    <ClInclude Include="DrawFont.h" />
+    <ClInclude Include="Lcd.h" />
     <ClInclude Include="Global.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
