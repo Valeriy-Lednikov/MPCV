@@ -1,7 +1,9 @@
 #pragma once
-struct Ñharacter
+struct Character
 {
-	int Ñharacter[8];
+	int character[8];
+
+
 };
 
 

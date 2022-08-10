@@ -150,6 +150,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ControlPanel.h" />
     <ClInclude Include="font.cpp" />
     <ClInclude Include="font.h" />
     <ClInclude Include="Lcd.h" />

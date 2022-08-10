@@ -6,14 +6,15 @@
 #include <cstddef>
 #include <bitset>
 #include <vector>
+#include <Windows.h>
 using namespace sf;
 
 #include "Lcd.h"
 
+
+#include "font.h"
+
 Color foneColor = Color(239, 245, 184);
-
-
-
 RenderWindow window(VideoMode(1400, 800), "MPCV");
 LCD lcd;
 
@@ -21,60 +22,49 @@ LCD lcd;
 
 int main()
 {
-	lcd.Inicialize(sf::Vector2i(0, 0), 8, sf::Vector2i(128, 64), &window);
-	std::cout << (int)'?' << std::endl;
-
-	/*lcd().InicializeFont();
+	lcd.Inicialize(sf::Vector2i(200, 100), 8, sf::Vector2i(128, 64), &window);
+	//std::cout << (int)'█' << std::endl;
 
 
-	lcd().PrintString("ABCDEFGHIJKLMNOPQR", 0);
-	lcd().PrintString("STUVWXYZ", 1);
-	lcd().PrintString("abcdefghijklmnopqr", 2);
-	lcd().PrintString("stuvwxyz", 3);
-	lcd().PrintString("! ?", 4);
-	lcd().PrintString("0123456789", 5);
-	lcd().PrintString("0123456789", 6);
-	lcd().PrintString("0123456789", 7);*/
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 
-	// Главный цикл приложения. Выполняется, пока открыто окно
 	while (window.isOpen())
 	{
-		// Обрабатываем очередь событий в цикле
+		lcd.PrintString("ABCDEFGHIJKLMNOPQR", 0);
 		Event event;
 		while (window.pollEvent(event))
 		{
-			// Пользователь нажал на «крестик» и хочет закрыть окно?
+
 			if (event.type == Event::Closed)
 				window.close();
 			if (event.type == Event::KeyPressed) {
+
 				if (event.key.code == sf::Keyboard::Escape)
 				{
 					window.close();
 				}
-				if (event.key.code == sf::Keyboard::W)
+				if (event.key.code == sf::Keyboard::Numpad8)
 				{
-					lcd.PrintString("ABCDEFGHIJKLMNOPQR", 0);
-					lcd.PrintString("STUVWXYZ", 1);
-					lcd.PrintString("abcdefghijklmnopqr", 2);
-					lcd.PrintString("stuvwxyz", 3);
-					lcd.PrintString("! ?", 4);
-					lcd.PrintString("0123456789", 5);
-					lcd.PrintString("0123456789", 6);
-					lcd.PrintString("0123456789", 7);
+					lcd.SetCursorPos(lcd.GetCursorPos().x, lcd.GetCursorPos().y - 1);
 				}
-				if (event.key.code == sf::Keyboard::S)
+				if (event.key.code == sf::Keyboard::Numpad2)
 				{
-					lcd.Clear();
+					lcd.SetCursorPos(lcd.GetCursorPos().x, lcd.GetCursorPos().y + 1);
 				}
+				if (event.key.code == sf::Keyboard::Numpad4)
+				{
+					lcd.SetCursorPos(lcd.GetCursorPos().x -1, lcd.GetCursorPos().y);
+				}
+				if (event.key.code == sf::Keyboard::Numpad6)
+				{
+					lcd.SetCursorPos(lcd.GetCursorPos().x + 1, lcd.GetCursorPos().y);
+				}
+
 			}
 		}
 		window.clear(Color(239, 245, 184));
 		lcd.Update();
-
-
-
-
-		// Отрисовка окна	
 		window.display();
 	}
 
