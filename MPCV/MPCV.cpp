@@ -17,7 +17,7 @@ using namespace sf;
 
 
 
-static sf::RenderWindow renderWindow(sf::VideoMode(1400, 800), "MPCVs");
+static sf::RenderWindow renderWindow(sf::VideoMode(1400, 800), "MPCV");
 
 
 Color foneColor = Color(239, 245, 184);

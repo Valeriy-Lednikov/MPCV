@@ -212,8 +212,8 @@ void LCD::DrawCharacter(int x, int y, int _char)
 
 void LCD::DelCharacter(int x, int y)
 {
-	for (int i = 0; i < 8; i++) {
-		for (int j = 0; j < 6; j++) {
+	for (int i = 0; i < 7; i++) {
+		for (int j = 0; j < 5; j++) {
 
 				screen[((x +2 +   j)) + ((y + i) * With)].active = false;
 			
