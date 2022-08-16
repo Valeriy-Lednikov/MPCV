@@ -35,8 +35,10 @@ int main()
 	//std::cout << (int)'█' << std::endl;
 	form.Inicialize(sf::Vector2i(1024, 0), sf::Vector2i(1440-1024, 512), &renderWindow);
 
-	form.CreateButton(sf::Vector2i(10, 10), sf::Vector2i(40, 300));
-	form.CreateButton(sf::Vector2i(10 + 40 + 10, 10), sf::Vector2i(40, 30));
+	form.CreateButton(sf::Vector2i(10, 50), sf::Vector2i(40, 30), 0);
+	form.CreateButton(sf::Vector2i(60, 50), sf::Vector2i(40, 30), 1);
+	form.CreateButton(sf::Vector2i(110, 50), sf::Vector2i(40, 30), 2);
+	form.CreateButton(sf::Vector2i(60, 10), sf::Vector2i(40, 30), 3);
 
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
@@ -91,6 +93,25 @@ int main()
 		renderWindow.clear(Color(239, 245, 184));
 		//renderWindow.clear();
 		lcd.Update();
+
+		int a = form.GetEvent();
+		if (a != -1) {
+			std::cout << a;
+			if (a == 3) {
+				lcd.SetCursorPos(lcd.GetCursorPos().x, lcd.GetCursorPos().y - 1);
+			}
+			if (a == 0) {
+				lcd.SetCursorPos(lcd.GetCursorPos().x - 1, lcd.GetCursorPos().y);
+			}
+			if (a == 1) {
+				lcd.SetCursorPos(lcd.GetCursorPos().x, lcd.GetCursorPos().y + 1);
+			}
+			if (a == 2) {
+				lcd.SetCursorPos(lcd.GetCursorPos().x + 1, lcd.GetCursorPos().y);
+			}
+
+		}
+
 
 		form.Update();
 		renderWindow.display();

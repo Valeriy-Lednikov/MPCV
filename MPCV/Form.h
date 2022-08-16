@@ -21,13 +21,15 @@ public:
 	sf::Vector2i Size = sf::Vector2i(0, 0);
 	bool Active = true;
 	bool Visible = true;
+	int Id;
 
 
-	Component(sf::Vector2i position, sf::Vector2i size, bool isActive, bool isVisible) {
+	Component(sf::Vector2i position, sf::Vector2i size, bool isActive, bool isVisible, int id) {
 		Position = position;
 		Size = size;
 		Active = isActive;
 		Visible = isVisible;
+		Id = id;
 	}
 	virtual void draw() {}
 	virtual ~Component() = default;
@@ -112,7 +114,7 @@ public:
 
 
 	}
-	Button(sf::Vector2i position, sf::Vector2i size, sf::RenderWindow* window) :Component(position, size, true, true) {
+	Button(sf::Vector2i position, sf::Vector2i size, sf::RenderWindow* window, int id) :Component(position, size, true, true, id) {
 		_window = window;
 	}
 
@@ -144,8 +146,18 @@ public:
 
 	void Update();
 
-	void CreateButton(sf::Vector2i Position, sf::Vector2i Size) {
-		Components.push_back(new Button(Position + FormPosition, Size, Window));
+	int GetEvent() {
+		int t = -1;
+		if (!event.empty()) {
+			t = event.top();
+			event.pop();
+		}
+		return t;
+	}
+
+
+	void CreateButton(sf::Vector2i Position, sf::Vector2i Size, int id) {
+		Components.push_back(new Button(Position + FormPosition, Size, Window, id));
 	}
 
 

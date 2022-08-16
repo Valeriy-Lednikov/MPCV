@@ -42,23 +42,27 @@ void Form::Update()
 
 
 
-		for (int i = 0; i < Components.size(); i++) {
-			if (dynamic_cast<Button*>(Components[i]))
-			{
-				Button* button = dynamic_cast<Button*>(Components[i]);
-							
+	for (int i = 0; i < Components.size(); i++) {
+		if (dynamic_cast<Button*>(Components[i]))
+		{
+			Button* button = dynamic_cast<Button*>(Components[i]);
 
-				if (PointInRect(sf::Mouse::getPosition(*Window), Components[i]->Position, Components[i]->Position + Components[i]->Size)) {
-					if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-						button->state = true;
+
+			if (PointInRect(sf::Mouse::getPosition(*Window), Components[i]->Position, Components[i]->Position + Components[i]->Size)) {
+				if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
+					if (!button->state) {
+						event.push(Components[i]->Id);
 					}
-					else {
-						button->state = false;
-					}
+					button->state = true;
 				}
+				else {
+					button->state = false;
+				}
+
 			}
 		}
-	
+	}
+
 
 
 	for (int i = 0; i < Components.size(); i++) {
