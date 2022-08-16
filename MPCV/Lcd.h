@@ -4,6 +4,8 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <math.h>
+#include "MPCV.h"
+
 
 class LCD {
 	int With = 128;

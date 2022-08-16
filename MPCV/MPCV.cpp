@@ -1,7 +1,8 @@
 ﻿// MPCV.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-#pragma once
+
 #include <iostream>
+#pragma once
 #include <SFML/Graphics.hpp>
 #include <cstddef>
 #include <bitset>
@@ -10,39 +11,63 @@
 using namespace sf;
 
 #include "Lcd.h"
-
-
 #include "font.h"
 
-Color foneColor = Color(239, 245, 184);
-RenderWindow window(VideoMode(1400, 800), "MPCV");
-LCD lcd;
+#include "Form.h"
 
+
+
+static sf::RenderWindow renderWindow(sf::VideoMode(1400, 800), "MPCVs");
+
+
+Color foneColor = Color(239, 245, 184);
+
+LCD lcd;
+Form form;
 
 
 int main()
 {
-	lcd.Inicialize(sf::Vector2i(200, 100), 8, sf::Vector2i(128, 64), &window);
-	//std::cout << (int)'█' << std::endl;
 
+	
+
+	lcd.Inicialize(sf::Vector2i(0, 0), 8, sf::Vector2i(128, 64), &renderWindow);
+	//std::cout << (int)'█' << std::endl;
+	form.Inicialize(sf::Vector2i(1024, 0), sf::Vector2i(1440-1024, 512), &renderWindow);
+
+	form.CreateButton(sf::Vector2i(10, 10), sf::Vector2i(40, 300));
+	form.CreateButton(sf::Vector2i(10 + 40 + 10, 10), sf::Vector2i(40, 30));
 
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	while (window.isOpen())
+	while (renderWindow.isOpen())
 	{
-		lcd.PrintString("ABCDEFGHIJKLMNOPQR", 0);
+
 		Event event;
-		while (window.pollEvent(event))
+		while (renderWindow.pollEvent(event))
 		{
 
 			if (event.type == Event::Closed)
-				window.close();
+				renderWindow.close();
 			if (event.type == Event::KeyPressed) {
 
 				if (event.key.code == sf::Keyboard::Escape)
 				{
-					window.close();
+					renderWindow.close();
+				}
+				if (event.key.code == sf::Keyboard::W)
+				{
+					//form.A();
+				}
+				if (event.key.code == sf::Keyboard::D)
+				{
+					lcd.InvertScreen();
+				}
+				if (event.key.code == sf::Keyboard::F)
+				{
+					lcd.PrintString("ABCDEFGHIJKLMNOPQR", 0);
+					lcd.Circle(sf::Vector2i(60, 20), 10);
 				}
 				if (event.key.code == sf::Keyboard::Numpad8)
 				{
@@ -63,9 +88,14 @@ int main()
 
 			}
 		}
-		window.clear(Color(239, 245, 184));
+		renderWindow.clear(Color(239, 245, 184));
+		//renderWindow.clear();
 		lcd.Update();
-		window.display();
+
+		form.Update();
+		renderWindow.display();
+
+		
 	}
 
 	return 0;
