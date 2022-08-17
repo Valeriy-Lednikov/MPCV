@@ -144,6 +144,85 @@ private:
 };
 
 
+
+class ButtonSwitch : public Component
+{
+public:
+	void draw() {
+
+		sf::CircleShape shape;
+		sf::Color foneColor;
+		if (State) {
+			foneColor = BackgroundColorOn;
+		}
+		else {
+			foneColor = BackgroundColorOff;
+		}
+
+		shape = sf::CircleShape(Size.y / 2);
+		shape.setFillColor(foneColor);
+		shape.setPosition(Position.x, Position.y);
+		_window->draw(shape);
+
+		shape.setPosition(Position.x+ Size.x - Size.y, Position.y);
+		_window->draw(shape);
+
+
+		sf::RectangleShape fon(sf::Vector2f(Size.x - Size.y, Size.y));
+		fon.setPosition(Position.x + Size.y/2, Position.y);
+		fon.setFillColor(foneColor);
+		_window->draw(fon);
+
+		sf::CircleShape tog(Size.y / 2 -1);
+		tog.setFillColor(sf::Color(100,100,100));
+
+		if (State) {
+			tog.setPosition(Position.x + Size.x - Size.y - 1, Position.y + 1);
+		}
+		else {
+			tog.setPosition(Position.x + 1, Position.y + 1);
+		}
+		_window->draw(tog);
+
+
+		Text.setFont(font_Arial);
+		Text.setCharacterSize(FontSize);
+		sf::Vector2i Center = sf::Vector2i((Position.x + Size.x / 2), (Position.y + Size.y / 2));
+		Center = sf::Vector2i(Center.x - Text.getGlobalBounds().width / 2, (Center.y - Text.getGlobalBounds().height / 2) - 3);
+		Text.setPosition(Center.x, Center.y);
+		if (State) {
+			Text.setPosition(Center.x + 1, Center.y + 1);
+		}
+
+		_window->draw(Text);
+
+
+
+	}
+	ButtonSwitch(sf::Vector2i position, sf::Vector2i size, sf::RenderWindow* window, std::string text, int id) :Component(position, size, true, true, id) {
+		_window = window;
+		Text.setString(text);
+		font_Arial.loadFromFile("arial.ttf");
+	}
+
+	bool State = true;
+	sf::Text Text;
+	int FontSize = 10;
+	sf::Color FontColor;
+
+	sf::Color BackgroundColorOff = sf::Color(0, 255, 0);
+	sf::Color BackgroundColorOn = sf::Color(255, 255, 0);
+
+
+private:
+	sf::Font font_Arial;
+	sf::RenderWindow* _window;
+};
+
+
+
+
+
 class Form
 {
 private:
@@ -158,15 +237,36 @@ private:
 	bool PointInRect(sf::Vector2i point, sf::Vector2i rectA, sf::Vector2i rectB);
 
 public:
-	std::stack<int> event;
+
+	struct Event {
+		int id = -1;
+		int eventId = -1;
+
+		Event(int _id, int _eventID) {
+			id = _id;
+			eventId = _eventID;
+		}
+	};
+
+	/*
+	***Events***
+	0 - mouse down
+	1 - mouse up
+	2 - mouse enter
+	3 - nouse leave
+	4 - mouse click
+
+	*/
+
+	std::stack<Event> event;
 
 
 	void Inicialize(sf::Vector2i position, sf::Vector2i size, sf::RenderWindow* window);
 
 	void Update();
 
-	int GetEvent() {
-		int t = -1;
+	Event GetEvent() {
+		Event t(-1, -1);
 		if (!event.empty()) {
 			t = event.top();
 			event.pop();
@@ -175,8 +275,16 @@ public:
 	}
 
 
-	void CreateButton(sf::Vector2i Position, sf::Vector2i Size, std::string text, int id) {
-		Components.push_back(new Button(Position + FormPosition, Size, Window, text,id));
+	void CreateButton(sf::Vector2i Position, sf::Vector2i Size, std::string text, int type, int id) {
+		if (type == 0) {
+			Components.push_back(new Button(Position + FormPosition, Size, Window, text, id));
+		}
+		else if (type == 1) {
+			Components.push_back(new ButtonSwitch(Position + FormPosition, Size, Window, text, id));
+		}
+		else {
+			Components.push_back(new Button(Position + FormPosition, Size, Window, text, id));
+		}
 	}
 
 

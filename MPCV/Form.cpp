@@ -51,7 +51,7 @@ void Form::Update()
 			if (PointInRect(sf::Mouse::getPosition(*Window), Components[i]->Position, Components[i]->Position + Components[i]->Size)) {
 				if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
 					if (!button->State) {
-						event.push(Components[i]->Id);
+						event.push(Form::Event(Components[i]->Id, 0));
 					}
 					button->State = true;
 				}
@@ -61,15 +61,28 @@ void Form::Update()
 
 			}
 		}
+
+
+		if (dynamic_cast<ButtonSwitch*>(Components[i]))
+		{
+			ButtonSwitch* button = dynamic_cast<ButtonSwitch*>(Components[i]);
+
+		}
+
 	}
 
 
 
 	for (int i = 0; i < Components.size(); i++) {
-		if (dynamic_cast<Button*>(Components[i]))
-		{
-			Components[i]->draw();
-		}
+		Components[i]->draw();
+		//if (dynamic_cast<Button*>(Components[i]))
+		//{
+		//	Components[i]->draw();
+		//}
+		//if (dynamic_cast<ButtonSwitch*>(Components[i]))
+		//{
+		//	Components[i]->draw();
+		//}
 	}
 
 }
