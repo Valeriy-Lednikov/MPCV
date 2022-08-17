@@ -50,13 +50,13 @@ void Form::Update()
 
 			if (PointInRect(sf::Mouse::getPosition(*Window), Components[i]->Position, Components[i]->Position + Components[i]->Size)) {
 				if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-					if (!button->state) {
+					if (!button->State) {
 						event.push(Components[i]->Id);
 					}
-					button->state = true;
+					button->State = true;
 				}
 				else {
-					button->state = false;
+					button->State = false;
 				}
 
 			}

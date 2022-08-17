@@ -35,10 +35,10 @@ int main()
 	//std::cout << (int)'█' << std::endl;
 	form.Inicialize(sf::Vector2i(1024, 0), sf::Vector2i(1440-1024, 512), &renderWindow);
 
-	form.CreateButton(sf::Vector2i(10, 50), sf::Vector2i(40, 30), 0);
-	form.CreateButton(sf::Vector2i(60, 50), sf::Vector2i(40, 30), 1);
-	form.CreateButton(sf::Vector2i(110, 50), sf::Vector2i(40, 30), 2);
-	form.CreateButton(sf::Vector2i(60, 10), sf::Vector2i(40, 30), 3);
+	form.CreateButton(sf::Vector2i(10, 50), sf::Vector2i(40, 30), "left", 0);
+	form.CreateButton(sf::Vector2i(60, 50), sf::Vector2i(40, 30),"down", 1);
+	form.CreateButton(sf::Vector2i(110, 50), sf::Vector2i(40, 30),"right", 2);
+	form.CreateButton(sf::Vector2i(60, 10), sf::Vector2i(40, 30), "up", 3);
 
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);

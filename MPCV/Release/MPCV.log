@@ -1,48 +1,353 @@
-﻿  Lcd.cpp
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(149,51): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+﻿  Form.cpp
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(44,51): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(44,43): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(45,39): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(45,27): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(49,57): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(149,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(49,47): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(150,40): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(50,43): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(50,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(57,116): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(57,34): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(58,36): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
           with
           [
               T=int
           ]
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(150,27): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(58,26): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
           with
           [
               T=int
           ]
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(162,58): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(60,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(60,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(75,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(77,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(77,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(80,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(82,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(82,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(86,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(88,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(88,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(91,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(93,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(93,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(99,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(101,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
           with
           [
               T=int
           ]
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(162,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(101,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
           with
           [
               T=int
           ]
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(236,20): warning C4018: <: несоответствие типов со знаком и без знака
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(250,43): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(287,22): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(105,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(107,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
           with
           [
               T=int
           ]
-f:\__Project\_2022\P3\MPCV\MPCV\Lcd.cpp(292,22): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(107,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(113,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(115,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(115,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(120,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(122,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(122,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.cpp(38,58): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.cpp(38,46): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.cpp(39,46): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.cpp(39,30): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.cpp(45,20): warning C4018: <: несоответствие типов со знаком и без знака
+f:\__Project\_2022\P3\MPCV\MPCV\Form.cpp(68,20): warning C4018: <: несоответствие типов со знаком и без знака
+  MPCV.cpp
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(44,51): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(44,43): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(45,39): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(45,27): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(49,57): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(49,47): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(50,43): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(50,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(57,116): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(57,34): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(58,36): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(58,26): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(60,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(60,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(75,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(77,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(77,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(80,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(82,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(82,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(86,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(88,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(88,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(91,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(93,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(93,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(99,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(101,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(101,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(105,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(107,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(107,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(113,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(115,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(115,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(120,49): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(122,60): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+f:\__Project\_2022\P3\MPCV\MPCV\Form.h(122,35): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
           with
           [
               T=int
           ]
   Создание кода
-  4 of 260 functions ( 1.5%) were compiled, the rest were copied from previous compilation.
+  1 of 266 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено

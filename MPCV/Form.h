@@ -51,9 +51,21 @@ public:
 		fon.setFillColor(sf::Color(88, 56, 48));
 		_window->draw(fon);
 
+		Text.setFont(font_Arial);
+		Text.setCharacterSize(FontSize);
+		sf::Vector2i Center = sf::Vector2i((Position.x + Size.x / 2), (Position.y + Size.y / 2));
+		Center = sf::Vector2i(Center.x - Text.getGlobalBounds().width / 2, (Center.y - Text.getGlobalBounds().height / 2)-3);
+		Text.setPosition(Center.x, Center.y);
+		if (State) {
+			Text.setPosition(Center.x+1, Center.y+1);
+		}
+
+		_window->draw(Text);
+
+
 		sf::Color ColorA = sf::Color(255, 255, 255);
 		sf::Color ColorB = sf::Color(128, 128, 128);
-		if (state) {
+		if (State) {
 			ColorB = sf::Color(255, 255, 255);
 			ColorA = sf::Color(128, 128, 128);
 		}
@@ -114,13 +126,20 @@ public:
 
 
 	}
-	Button(sf::Vector2i position, sf::Vector2i size, sf::RenderWindow* window, int id) :Component(position, size, true, true, id) {
+	Button(sf::Vector2i position, sf::Vector2i size, sf::RenderWindow* window, std::string text, int id) :Component(position, size, true, true, id) {
 		_window = window;
+		Text.setString(text);
+		font_Arial.loadFromFile("arial.ttf");
 	}
 
-	bool state = false;
+	bool State = false;
+	sf::Text Text;
+	int FontSize = 10;
+	sf::Color FontColor;
+
+
 private:
-	
+	sf::Font font_Arial;
 	sf::RenderWindow* _window;
 };
 
@@ -156,8 +175,8 @@ public:
 	}
 
 
-	void CreateButton(sf::Vector2i Position, sf::Vector2i Size, int id) {
-		Components.push_back(new Button(Position + FormPosition, Size, Window, id));
+	void CreateButton(sf::Vector2i Position, sf::Vector2i Size, std::string text, int id) {
+		Components.push_back(new Button(Position + FormPosition, Size, Window, text,id));
 	}
 
 
